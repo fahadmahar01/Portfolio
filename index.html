@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fahad Fayyaz | Website Systems & Digital Content Specialist</title>
+<meta name="description" content="Website administrator and digital content lead. I build, stage and monitor corporate websites and the content that fills them.">
+<meta name="theme-color" content="#07090d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07090d;--panel:#0d1118;--ink:#e9edf4;--mute:#8b94a6;--line:#1c2433;--acc:#c8ff3d;--amb:#ffb547;color-scheme:dark}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}.mono{font-family:'JetBrains Mono',monospace}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(520px circle at var(--mx,50%) var(--my,20%),rgba(200,255,61,.07),transparent 60%);pointer-events:none;z-index:0}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--acc);z-index:50}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+nav{position:fixed;top:0;width:100%;z-index:40;background:rgba(7,9,13,.75);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:62px}
+nav b{font-weight:700;letter-spacing:-.02em}nav b i{color:var(--acc);font-style:normal}
+nav div{display:flex;gap:26px;font-size:.88rem;color:var(--mute)}nav a{text-decoration:none;transition:.2s}nav a:hover{color:var(--acc)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;-webkit-mask:radial-gradient(ellipse 70% 60% at 50% 30%,#000,transparent);mask:radial-gradient(ellipse 70% 60% at 50% 30%,#000,transparent);opacity:.7}
+.hero{position:relative;padding:170px 0 90px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center}
+.pill{display:inline-flex;gap:10px;align-items:center;font-size:.8rem;padding:7px 14px;border:1px solid var(--line);border-radius:99px;background:var(--panel);color:var(--mute);margin-bottom:26px}
+.pill:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 0 var(--acc);animation:p 2s infinite}
+@keyframes p{70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
+h1{font-size:clamp(3rem,8vw,6.4rem);line-height:.95;letter-spacing:-.05em;font-weight:700}
+h1 em{font-style:normal;color:var(--acc)}
+.role{font-size:clamp(1.1rem,2.4vw,1.5rem);margin:22px 0 14px;color:var(--ink)}.role span:after{content:"▍";color:var(--acc);animation:b 1s steps(1) infinite}
+@keyframes b{50%{opacity:0}}
+.lead{color:var(--mute);max-width:52ch;font-size:1.08rem;margin-bottom:32px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:13px 24px;border-radius:10px;font-weight:600;text-decoration:none;background:var(--acc);color:#0a0d12;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(200,255,61,.25)}.btn.o{background:transparent;color:var(--ink);border:1px solid var(--line)}.btn.o:hover{border-color:var(--acc);box-shadow:none}
+.term{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.term header{display:flex;gap:7px;padding:13px 16px;border-bottom:1px solid var(--line)}.term header i{width:11px;height:11px;border-radius:50%;background:#2a3344}
+.term pre{padding:20px;font-size:.82rem;line-height:1.9;min-height:250px;color:var(--mute);white-space:pre-wrap}
+.term pre b{color:var(--acc);font-weight:500}.term pre u{text-decoration:none;color:var(--amb)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:16px;background:var(--panel);margin-top:70px}
+.stats div{padding:26px;border-right:1px solid var(--line)}.stats div:last-child{border:0}
+.stats strong{display:block;font-size:2.4rem;letter-spacing:-.04em;color:var(--acc)}.stats span{color:var(--mute);font-size:.88rem}
+section{padding:100px 0}
+.tag{color:var(--acc);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
+h2{font-size:clamp(2rem,4.6vw,3.3rem);letter-spacing:-.04em;line-height:1.05;max-width:20ch;margin-bottom:46px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:28px;overflow:hidden;transition:transform .3s,border-color .3s}
+.card:before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--x,50%) var(--y,0),rgba(200,255,61,.12),transparent 60%);opacity:0;transition:.3s}
+.card:hover{border-color:#34411f;transform:translateY(-4px)}.card:hover:before{opacity:1}
+.card>*{position:relative}.card .n{color:var(--amb);font-size:.8rem;margin-bottom:34px}.card h3{font-size:1.2rem;letter-spacing:-.02em;margin-bottom:8px}.card p{color:var(--mute);font-size:.95rem}
+.log{border-left:1px solid var(--line);margin-left:8px;display:grid;gap:44px}
+.commit{position:relative;padding-left:36px}.commit:before{content:"";position:absolute;left:-7px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:2px solid var(--acc)}
+.meta{font-size:.8rem;color:var(--mute);display:flex;gap:14px;flex-wrap:wrap;margin-bottom:8px}.meta b{color:var(--amb);font-weight:500}
+.commit h3{font-size:1.5rem;letter-spacing:-.03em}.co{color:var(--acc);margin-bottom:14px}
+.commit ul{list-style:none;display:grid;gap:9px;color:var(--mute);max-width:75ch}.commit li:before{content:"+ ";color:var(--acc);font-family:'JetBrains Mono',monospace}
+.stack{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.stack .card h3{font-size:1rem;margin-bottom:16px;color:var(--amb);font-family:'JetBrains Mono',monospace;font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips span{font-size:.85rem;padding:6px 12px;border:1px solid var(--line);border-radius:8px;color:var(--ink);background:#0a0e15}
+.feat{display:grid;grid-template-columns:1.2fr 1fr;gap:0;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--panel)}
+.feat>div{padding:44px}.feat h3{font-size:2rem;letter-spacing:-.03em;margin-bottom:12px}.feat p{color:var(--mute);margin-bottom:26px}
+.feat .vis{background:linear-gradient(135deg,#101a08,#0d1118);border-left:1px solid var(--line);display:grid;place-items:center;font-size:clamp(3rem,7vw,5rem);font-weight:700;letter-spacing:-.05em;color:var(--acc);min-height:240px}
+.cta{text-align:center;border:1px solid var(--line);border-radius:24px;padding:80px 24px;background:radial-gradient(500px circle at 50% 0,rgba(200,255,61,.1),transparent 70%),var(--panel)}
+.cta h2{margin:0 auto 18px;max-width:16ch}.cta p{color:var(--mute);margin-bottom:30px}
+.links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+footer{padding:36px 0;color:var(--mute);font-size:.88rem;border-top:1px solid var(--line)}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.rv{opacity:0;transform:translateY(28px);transition:.8s cubic-bezier(.2,.8,.2,1)}.rv.on{opacity:1;transform:none}
+@media(max-width:860px){.hero .wrap,.feat{grid-template-columns:1fr}.cards,.stack{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(2){border-right:0}.stats div:nth-child(-n+2){border-bottom:1px solid var(--line)}nav div a:not(:last-child){display:none}.feat .vis{border-left:0;border-top:1px solid var(--line)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+@property --a{syntax:'<angle>';initial-value:0deg;inherits:false}
+@keyframes spin{to{--a:360deg}}@keyframes rise{to{transform:none}}@keyframes fl{50%{transform:translate(40px,-30px) scale(1.15)}}@keyframes mq{to{transform:translateX(-50%)}}
+.aur{position:absolute;border-radius:50%;filter:blur(90px);opacity:.28;animation:fl 14s ease-in-out infinite;pointer-events:none}
+.a1{width:460px;height:460px;background:var(--acc);top:-120px;left:-100px}.a2{width:380px;height:380px;background:#4f7cff;right:-80px;top:120px;animation-delay:-6s}
+h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}h1 .ln>span{display:inline-block;transform:translateY(105%);animation:rise 1s cubic-bezier(.2,.8,.2,1) forwards}
+h1 em{background:linear-gradient(100deg,var(--acc),#7dffb2 55%,var(--amb));-webkit-background-clip:text;background-clip:text;color:transparent}
+.term{transition:transform .25s ease-out;transform-style:preserve-3d;will-change:transform}
+.card:after{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:conic-gradient(from var(--a),transparent 55%,var(--acc),transparent);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover:after{opacity:1;animation:spin 3s linear infinite}
+#services .cards .card:nth-child(1),#services .cards .card:nth-child(4),#services .cards .card:nth-child(6){grid-column:span 2}
+.mq{overflow:hidden;border-block:1px solid var(--line);padding:18px 0;position:relative;z-index:1;background:#090c12}
+.mq div{display:flex;gap:48px;width:max-content;animation:mq 34s linear infinite;font:500 .85rem 'JetBrains Mono',monospace;letter-spacing:.14em;color:var(--mute)}
+.mq span:after{content:"✦";color:var(--acc);margin-left:48px}
+#cur{position:fixed;width:34px;height:34px;border:1px solid var(--acc);border-radius:50%;pointer-events:none;z-index:60;left:-50px;top:-50px;transition:width .2s,height .2s,background .2s;mix-blend-mode:difference}
+#cur.h{width:62px;height:62px;background:rgba(200,255,61,.18)}
+@media(pointer:coarse){#cur{display:none}}
+@media(max-width:860px){#services .cards .card{grid-column:auto!important}}
+@media(prefers-reduced-motion:reduce){h1 .ln>span{transform:none}.aur{display:none}#cur{display:none}}
+</style>
+</head>
+<body>
+<div id="bar"></div><div id="cur"></div>
+<nav><div class="wrap"><b>fahad<i>.</i>fayyaz</b><div class="mono"><a href="#about">about</a><a href="#services">services</a><a href="#experience">experience</a><a href="#stack">stack</a><a href="#contact">contact</a></div></div></nav>
+
+<header class="hero" id="top"><div class="aur a1"></div><div class="aur a2"></div><div class="grid"></div><div class="wrap">
+<div>
+<div class="pill mono">Live now: White Oak Technical Services, Dubai (remote)</div>
+<h1><span class="ln"><span style="animation-delay:.1s">Fahad</span></span><span class="ln"><span style="animation-delay:.28s"><em>Fayyaz</em></span></span></h1>
+<p class="role mono">&gt; <span id="role"></span></p>
+<p class="lead">I build, stage and monitor corporate websites, and I turn technical project work into content that wins attention and client inquiries.</p>
+<div class="btns"><a class="btn" href="#experience">See my work</a><a class="btn o" href="#contact">Get in touch</a></div>
+</div>
+<div class="term" aria-hidden="true"><header><i></i><i></i><i></i></header><pre class="mono" id="term"></pre></div>
+</div>
+<div class="wrap"><div class="stats rv">
+<div><strong data-n="2" data-s="+">2+</strong><span>years running business websites</span></div>
+<div><strong data-n="2">2</strong><span>organisations, UAE and Pakistan</span></div>
+<div><strong data-n="3">3</strong><span>languages spoken</span></div>
+<div><strong>Bachelor</strong><span>in Computer Science, Islamia University of Bahawalpur</span></div>
+</div></div>
+</header>
+
+<div class="mq" aria-hidden="true"><div><span>WEBSITE ADMINISTRATION</span><span>CONTENT STAGING</span><span>MEDIA OPTIMIZATION</span><span>SOCIAL MEDIA SYSTEMS</span><span>COPYWRITING</span><span>DEPLOYMENT MONITORING</span><span>WEBSITE ADMINISTRATION</span><span>CONTENT STAGING</span><span>MEDIA OPTIMIZATION</span><span>SOCIAL MEDIA SYSTEMS</span><span>COPYWRITING</span><span>DEPLOYMENT MONITORING</span></div></div>
+
+<section id="about"><div class="wrap"><div class="tag mono">// about</div>
+<h2 class="rv">The person who keeps your website fast, accurate and alive.</h2>
+<p class="rv" style="color:var(--mute);max-width:70ch;font-size:1.1rem">I'm a Computer Science graduate who manages high-performance corporate websites, technical content operations and social media for businesses in different industries. I like detail, clean workflows and measurable results, and I communicate with international clients in professional English.</p></div></section>
+
+<section id="services"><div class="wrap"><div class="tag mono">// what I do</div><h2 class="rv">Six things I run end to end</h2>
+<div class="cards">
+<div class="card rv"><div class="n mono">01</div><h3>Website administration</h3><p>Daily maintenance, uptime monitoring, staging environments and deployment checks.</p></div>
+<div class="card rv"><div class="n mono">02</div><h3>Content staging and publishing</h3><p>Technical formatting, metadata optimization and publishing workflows for large projects.</p></div>
+<div class="card rv"><div class="n mono">03</div><h3>Media optimization</h3><p>Resizing and archiving high-resolution photography and footage so pages stay fast.</p></div>
+<div class="card rv"><div class="n mono">04</div><h3>Social media systems</h3><p>Facebook and Instagram set up from scratch, with brand safety rules and scheduling pipelines.</p></div>
+<div class="card rv"><div class="n mono">05</div><h3>Copywriting and portfolios</h3><p>Short and long-form copy, project data sheets and curated project portfolios.</p></div>
+<div class="card rv"><div class="n mono">06</div><h3>International client communication</h3><p>Clear handling of remote clients and buyers, from blueprints to project layouts.</p></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap"><div class="tag mono">// experience</div><h2 class="rv">Commit history</h2>
+<div class="log">
+<article class="commit rv"><div class="meta mono"><b>a41f9c2</b><span>Jan 2025 to present</span><span>Contract, remote</span></div>
+<h3>Web Administrator &amp; Digital Content Lead</h3><div class="co">White Oak Technical Services LLC, Dubai, UAE</div>
+<ul><li>Built, staged and monitor the live cloud-deployed architectural showcase that presents structural fit-out credentials.</li><li>Own formatting, metadata optimization and publishing for large structural projects delivered to regional clients.</li><li>Set up the company's Facebook and Instagram presence from the ground up, with brand safety rules and scheduling pipelines.</li><li>Process remote media, resizing industrial photography and field footage for fast page loads.</li></ul></article>
+<article class="commit rv"><div class="meta mono"><b>7be03d8</b><span>Mar 2024 to Feb 2026</span></div>
+<h3>Website Administrator &amp; Social Media Manager</h3><div class="co">Al Arfat City, Property &amp; Real Estate Office, Bahawalpur</div>
+<ul><li>Handled daily maintenance, stability and uptime tracking for the corporate property portal.</li><li>Curated, edited and staged HD visual assets documenting ongoing real estate developments.</li><li>Wrote technical descriptions, feature data sheets and location maps for online portfolios.</li><li>Ran organic content campaigns that measurably increased cross-platform engagement.</li><li>Managed international customer communication, explaining zoning blueprints and site maps to remote buyers.</li></ul></article>
+</div></div></section>
+
+<section id="stack"><div class="wrap"><div class="tag mono">// stack</div><h2 class="rv">Tools and skills</h2>
+<div class="stack">
+<div class="card rv"><h3>web_systems</h3><div class="chips"><span>Website administration</span><span>Deployment monitoring</span><span>Staging environments</span><span>UI/UX coordination</span><span>Vercel</span><span>Web architecture</span></div></div>
+<div class="card rv"><h3>content_media</h3><div class="chips"><span>Digital asset archiving</span><span>Copywriting</span><span>Portfolio curation</span><span>Meta Business Suite</span><span>Photo and video management</span></div></div>
+<div class="card rv"><h3>technical</h3><div class="chips"><span>HTML5</span><span>CSS3</span><span>WordPress</span><span>Git</span><span>Google Workspace</span><span>MS Excel</span></div></div>
+<div class="card rv"><h3>strengths</h3><div class="chips"><span>Process automation</span><span>Data validation</span><span>Attention to detail</span><span>Team collaboration</span><span>English, Urdu, Punjabi, Saraiki</span></div></div>
+</div></div></section>
+
+<section id="work"><div class="wrap"><div class="tag mono">// featured</div><h2 class="rv">See it live</h2>
+<div class="feat rv"><div><h3>Portfolio site on Vercel</h3><p>A live, cloud-deployed site you can open and explore right now.</p><a class="btn" href="https://metron-website-six.vercel.app" target="_blank" rel="noopener">Open live site</a></div><div class="vis mono">&lt;/&gt;</div></div></div></section>
+
+<section id="contact"><div class="wrap"><div class="cta rv"><div class="tag mono">// contact</div><h2>Need a website kept sharp and content that works?</h2><p>Open to remote work with teams in the UAE, Pakistan and beyond.</p>
+<div class="links"><a class="btn" href="mailto:fahadfiaz641@gmail.com">fahadfiaz641@gmail.com</a><a class="btn o" href="https://linkedin.com/in/fahad-fayyaz-32992727b" target="_blank" rel="noopener">LinkedIn</a><a class="btn o" href="https://wa.me923117129329" target="_blank" rel="noopener">WhatsApp</a></div></div></div></section>
+
+<footer><div class="wrap"><span>© <span id="y"></span> Fahad Fayyaz</span><span class="mono">Bahawalpur, Punjab, Pakistan</span></div></footer>
+
+<script>
+(()=>{
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+document.getElementById('y').textContent=new Date().getFullYear();
+// scroll progress + cursor glow
+const bar=document.getElementById('bar');
+addEventListener('scroll',()=>{bar.style.width=scrollY/(document.body.scrollHeight-innerHeight)*100+'%'},{passive:true});
+addEventListener('pointermove',e=>{document.body.style.setProperty('--mx',e.clientX+'px');document.body.style.setProperty('--my',e.clientY+'px')});
+document.querySelectorAll('.card').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--x',e.clientX-r.left+'px');c.style.setProperty('--y',e.clientY-r.top+'px')}));
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+// rotating role
+const roles=['Web Administrator','Digital Content Lead','Social Media Architect','Website Systems Specialist'],r=document.getElementById('role');
+if(rm){r.textContent=roles[0]}else{let i=0,j=0,del=false;(function t(){const w=roles[i];r.textContent=w.slice(0,j);
+if(!del&&j<w.length){j++;setTimeout(t,70)}else if(!del){del=true;setTimeout(t,1600)}else if(j>0){j--;setTimeout(t,35)}else{del=false;i=(i+1)%roles.length;setTimeout(t,300)}})()}
+// terminal
+const L=['<b>$</b> git push origin main','Enumerating objects... <u>done</u>','<b>✓</b> optimizing media assets','<b>✓</b> building production bundle','<b>✓</b> metadata and SEO checks passed','<b>✓</b> deployed to production','','<b>●</b> status: all systems operational','<b>$</b> _'];
+const T=document.getElementById('term');
+if(rm){T.innerHTML=L.join('\n')}else{let k=0;(function s(){T.innerHTML=L.slice(0,++k).join('\n');if(k<L.length)setTimeout(s,k===1?900:520)})()}
+
+// counters
+document.querySelectorAll('[data-n]').forEach(el=>{const n=+el.dataset.n,sf=el.dataset.s||'';if(rm)return;el.textContent='0'+sf;
+new IntersectionObserver((es,o)=>es.forEach(e=>{if(!e.isIntersecting)return;o.disconnect();let t0;const f=t=>{t0=t0||t;const p=Math.min((t-t0)/1100,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+sf;if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)})).observe(el)});
+if(!rm&&!matchMedia('(pointer:coarse)').matches){
+// cursor ring + magnetic buttons + terminal tilt
+const cu=document.getElementById('cur');let cx=0,cy=0,tx=0,ty=0;
+addEventListener('pointermove',e=>{tx=e.clientX;ty=e.clientY});
+(function l(){cx+=(tx-cx)*.2;cy+=(ty-cy)*.2;cu.style.transform=`translate(${cx-17}px,${cy-17}px)`;requestAnimationFrame(l)})();
+document.querySelectorAll('a,.card').forEach(el=>{el.addEventListener('pointerenter',()=>cu.classList.add('h'));el.addEventListener('pointerleave',()=>cu.classList.remove('h'))});
+document.querySelectorAll('.btn').forEach(b=>{b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.2}px,${(e.clientY-r.top-r.height/2)*.3}px)`});b.addEventListener('pointerleave',()=>b.style.transform='')});
+const tm=document.querySelector('.term');
+document.getElementById('top').addEventListener('pointermove',e=>{const x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;tm.style.transform=`perspective(900px) rotateY(${x*10}deg) rotateX(${-y*8}deg)`});
+document.getElementById('top').addEventListener('pointerleave',()=>tm.style.transform='')}
+})();
+</script>
+</body>
+</html>
